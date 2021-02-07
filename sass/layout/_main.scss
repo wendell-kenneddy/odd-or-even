@@ -1,0 +1,27 @@
+#about {
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+#odd-or-even {
+  .button-group {
+    margin: 1rem 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #number-list {
+    border-left: 0.5rem solid $number-list-border-color;
+    border-radius: 4px;
+    margin: auto;
+    padding: 1rem;
+    width: 80%;
+    height: 40vh;
+    overflow-y: auto;
+  }
+}

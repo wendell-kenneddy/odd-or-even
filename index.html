@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-type" content="text/css; charset=utf-8">
+  <meta http-equiv="content-type" content="text/javascript; charset=utf-8">
+  <meta http-equiv="content-language" content="pt-br">
+  <meta name="referrer-policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Wendell Kenneddy">
+  <meta name="creator" content="Wendell Kenneddy">
+  <meta name="description"
+    content="Uma aplicação que retorna valores par ou ímpar, você escolhe.">
+  <meta name="keywords" content="Par, Ímpar, Número Aleatório">
+  <meta property="og:locale" content="pt-br">
+  <meta property="og:type" content="website">
+  <meta property="og:title”" content="Par ou Ímpar">
+  <meta property="og:site_name" content="Par ou Ímpar">
+  <meta property="og:description"
+    content="Uma aplicação que retorna valores par ou ímpar, você escolhe.">
+  <meta property="og:image" content="./assets/images/final-result-desktop.png">
+  <title>Par ou Ímpar</title>
+  <link rel="shortcut icon" href="./assets/icons/favicon.svg" type="img+xml">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+  <script src="./script.js" type="text/javascript" charset="utf-8"
+    async></script>
+</head>
+
+<body>
+  <header id="page-header" name="page-header" aria-roledescription="header"
+    role="banner">
+    <h1 id="logo" name="logo">Par ou Ímpar</h1>
+  </header>
+
+  <!--Content list for acessibility-->
+  <nav id="shortcut-nav" name="navegar-pelos-coonteudos-da-pagina"
+    style="position: absolute; left: -999em;">
+    <ul id="shortcuts" name="atalhos">
+      <li><a href="#how-it-works">Como funciona</a></li>
+      <li><a href="#sobre">Sobre a aplicação</a></li>
+    </ul>
+  </nav>
+
+  <!--Page main content-->
+  <main class="container" aria-roledescription="conteudo-principal" role="main">
+    <section id="about" name="sobre">
+      <h2 id="how-it-works" name="como-funciona">Como funciona</h2>
+      <p id="explain" name="explicaçao">Ao clicar no botão para pares ou no
+        botão para ímpares, uma lista de números de 0 a (0-100) será exibida na
+        lista de números, exibindo somente os números ímpares ou pares,
+        dependendo da sua escolha. Para recomeçar, utilize o botão "reset"
+        (resetar) para reconstruir ambas as listas com novos números, e então
+        escolha novamente entre os ímpares ou pares.</p>
+    </section>
+
+
+    <section id="odd-or-even" name="escolher-entre-par-ou-impar">
+      <div class="button-group" name="grupo-de-botoes">
+        <button id="list-even" name="botão-para-pares"
+          onclick="manipulateDOM.addNewEvenArray()"
+          title="Clique para exibir uma lista de números pares na lista de numeros">Par</button>
+        <button id="list-odd" name="botão-para-impares"
+          onclick="manipulateDOM.addNewOddArray()"
+          title="Clique para exibir uma lista de números ímpares na lista de numeros.">Ímpar</button>
+      </div>
+
+      <ul id="number-list" name="lista-de-numeros">
+      </ul>
+
+      <div class="button-group" name="grupo-de-botoes">
+        <button id="list-reset" name="reconstruir-lista"
+          title="Este botão reconstrói apaga os dados da lista e a reconstrói com novos números, permitindo que você selecione novamente entre números ímpares ou números pares"
+          onclick="App.reload()">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="page-footer" name="rodape-da-pagina" aria-roledescription="rodape"
+    role="contentinfo">
+    <a href="https://github.com/wendell-kenneddy" rel="external" target="_blank"
+      title="Ir para o perfil de Wendell Kenneddy no Github">
+      <img src="./assets/icons/github-icon.svg" alt="Ícone do Github"
+        width="32px">
+    </a>
+    <p id="developed-by" name="desenvolvido-por">Desenvolvido por Wendell
+      Kenneddy</p>
+  </footer>
+</body>
+
+</html>
