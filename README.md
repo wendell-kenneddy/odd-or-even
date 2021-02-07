@@ -4,6 +4,7 @@
 ![PRs são bem-vindos](https://img.shields.io/badge/PRs-welcome-green)
 ![Techs: HTML, SCSS e JS](https://img.shields.io/badge/techs-HTML%2C%20SCSS%2C%20JS-green)
 ![Estado da aplicação: incompleto, mas utilizável](https://img.shields.io/badge/status-unfinished%20--%20usable-yellow)
+![Licença: Wendell Kenneddy 2020 MIT](https://img.shields.io/github/license/wendell-kenneddy/odd-or-even)
 
 ![Imagem de demonstração do website](./assets/images/final-result-desktop.png)
 
